@@ -12,6 +12,11 @@
 		17ACACC320ED03CF00574DD2 /* simple_memo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17ACACC120ED03CF00574DD2 /* simple_memo.xcdatamodeld */; };
 		17ACACC520ED03D000574DD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17ACACC420ED03D000574DD2 /* Assets.xcassets */; };
 		17ACACC820ED03D000574DD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17ACACC620ED03D000574DD2 /* LaunchScreen.storyboard */; };
+		17ACACD020EE431200574DD2 /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACACCF20EE431200574DD2 /* MemoListVC.swift */; };
+		17ACACD220EE432800574DD2 /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACACD120EE432800574DD2 /* MemoFormVC.swift */; };
+		17ACACD420EE433700574DD2 /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACACD320EE433700574DD2 /* MemoReadVC.swift */; };
+		17ACACD620EE434900574DD2 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACACD520EE434900574DD2 /* MemoCell.swift */; };
+		17ACACD920EE441900574DD2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACACD820EE441900574DD2 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		17ACACC420ED03D000574DD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17ACACC720ED03D000574DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17ACACC920ED03D000574DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17ACACCF20EE431200574DD2 /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
+		17ACACD120EE432800574DD2 /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
+		17ACACD320EE433700574DD2 /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
+		17ACACD520EE434900574DD2 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		17ACACD820EE441900574DD2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		17ACACB920ED03CF00574DD2 /* simple_memo */ = {
 			isa = PBXGroup;
 			children = (
+				17ACACD720EE440500574DD2 /* Model */,
 				17ACACBA20ED03CF00574DD2 /* AppDelegate.swift */,
 				17ACACBE20ED03CF00574DD2 /* Main.storyboard */,
 				17ACACC420ED03D000574DD2 /* Assets.xcassets */,
 				17ACACC620ED03D000574DD2 /* LaunchScreen.storyboard */,
 				17ACACC920ED03D000574DD2 /* Info.plist */,
 				17ACACC120ED03CF00574DD2 /* simple_memo.xcdatamodeld */,
+				17ACACCF20EE431200574DD2 /* MemoListVC.swift */,
+				17ACACD120EE432800574DD2 /* MemoFormVC.swift */,
+				17ACACD320EE433700574DD2 /* MemoReadVC.swift */,
+				17ACACD520EE434900574DD2 /* MemoCell.swift */,
 			);
 			path = simple_memo;
+			sourceTree = "<group>";
+		};
+		17ACACD720EE440500574DD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17ACACD820EE441900574DD2 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17ACACD920EE441900574DD2 /* Model.swift in Sources */,
+				17ACACD020EE431200574DD2 /* MemoListVC.swift in Sources */,
+				17ACACD420EE433700574DD2 /* MemoReadVC.swift in Sources */,
 				17ACACBB20ED03CF00574DD2 /* AppDelegate.swift in Sources */,
+				17ACACD220EE432800574DD2 /* MemoFormVC.swift in Sources */,
 				17ACACC320ED03CF00574DD2 /* simple_memo.xcdatamodeld in Sources */,
+				17ACACD620EE434900574DD2 /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
