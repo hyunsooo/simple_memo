@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="syQ-Z3-cns">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="syQ-Z3-cns">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,7 +38,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="1970-01-01 19:00:00" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbC-ka-7UN">
-                                            <rect key="frame" x="266" y="23" width="67" height="32"/>
+                                            <rect key="frame" x="266" y="24" width="67" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="67" id="qrB-JL-EhY"/>
                                                 <constraint firstAttribute="height" constant="32" id="z66-dg-3wu"/>
@@ -97,7 +94,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="1970-01-01 19:00:00" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtQ-nx-KOM">
-                                            <rect key="frame" x="274" y="23.333333333333329" width="67" height="32"/>
+                                            <rect key="frame" x="274" y="24" width="67" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="32" id="JUK-aY-k8F"/>
                                                 <constraint firstAttribute="width" constant="67" id="m3x-sC-7Ot"/>
@@ -163,7 +160,7 @@
         <!--상세 화면-->
         <scene sceneID="YYe-1X-o3p">
             <objects>
-                <viewController title="상세 화면" id="IJ5-Fd-gRl" userLabel="상세 화면" customClass="MemoReadVC" customModule="simple_memo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoRead" title="상세 화면" id="IJ5-Fd-gRl" userLabel="상세 화면" customClass="MemoReadVC" customModule="simple_memo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6NE-WT-gbi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,6 +202,11 @@
                         <viewLayoutGuide key="safeArea" id="BST-XG-Acw"/>
                     </view>
                     <navigationItem key="navigationItem" title="상세화면" id="IUl-cw-neN"/>
+                    <connections>
+                        <outlet property="contents" destination="AqA-Fo-asO" id="gPq-Cv-AMh"/>
+                        <outlet property="img" destination="wpP-fu-ji3" id="Eqc-Y2-7BC"/>
+                        <outlet property="subject" destination="MNx-J5-KUp" id="Sun-Z8-aZf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJm-hA-mlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
